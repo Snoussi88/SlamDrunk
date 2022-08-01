@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 19 18:05:45 2022
+# Make data base, printed on Mon Aug  1 04:06:38 2022
 
 # Variables
 
@@ -49,11 +51,13 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # automatic
 %F = $(notdir $%)
 # environment
+CONDA_PROMPT_MODIFIER = (base) 
+# environment
 VSCODE_CODE_CACHE_PATH = /home/ks/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.I9JKP1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.NRCJQ1
 # default
 .LOADED := 
 # default
@@ -63,7 +67,7 @@ MAKEFLAGS = pqrR
 # makefile
 CURDIR := /home/ks/projects/SlamDrunk
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
@@ -85,11 +89,13 @@ XDG_SESSION_DESKTOP = ubuntu
 # makefile
 MAKEFILE_LIST := 
 # environment
+CONDA_SHLVL = 1
+# environment
 SNAP_REEXEC = 
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 15414
+VSCODE_PID = 3543
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -97,7 +103,9 @@ XDG_SESSION_TYPE = wayland
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/ks-ROG-Strix-G713QM-G713QM:@/tmp/.ICE-unix/1968,unix/ks-ROG-Strix-G713QM-G713QM:/tmp/.ICE-unix/1968
+CONDA_PYTHON_EXE = /home/ks/anaconda3/bin/python
+# environment
+SESSION_MANAGER = local/ks-ROG-Strix-G713QM-G713QM:@/tmp/.ICE-unix/1992,unix/ks-ROG-Strix-G713QM-G713QM:/tmp/.ICE-unix/1992
 # automatic
 *F = $(notdir $*)
 # environment
@@ -112,6 +120,8 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# environment
+CONDA_PREFIX = /home/ks/anaconda3
 # makefile
 SHELL = /bin/sh
 # default
@@ -131,7 +141,7 @@ MAKE = $(MAKE_COMMAND)
 # environment
 SNAP_COOKIE = MJiMnJ-PtK-8ijDikwxuu_9NPm15lr3ts7AKPaGqqhXtMBOOHQgi
 # environment
-PATH = /home/ks/.local/bin:/home/ks/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+PATH = /home/ks/.local/bin:/home/ks/anaconda3/bin:/home/ks/anaconda3/condabin:/home/ks/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 # default
 MAKEFILES := 
 # environment
@@ -143,7 +153,7 @@ SNAP_USER_COMMON = /home/ks/snap/code/common
 # environment
 SNAP = /snap/code/102
 # environment
-INVOCATION_ID = 2b72352a686c45da814e9ad6b1baad7f
+INVOCATION_ID = 7a160ac905e6454cb64c0087f7fc3068
 # environment
 SNAP_REVISION = 102
 # environment
@@ -169,6 +179,8 @@ ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
+CONDA_DEFAULT_ENV = base
+# environment
 LOGNAME = ks
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
@@ -177,7 +189,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 1987
+SYSTEMD_EXEC_PID = 2011
 # environment
 DISPLAY = :0
 # environment
@@ -193,9 +205,9 @@ SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = MJiMnJ-PtK-8ijDikwxuu_9NPm15lr3ts7AKPaGqqhXtMBOOHQgi
 # environment
-MANAGERPID = 1775
+MANAGERPID = 1797
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 15368
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3496
 # environment
 _ = /snap/code/102/usr/share/code/code
 # environment
@@ -203,7 +215,9 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/ks/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:43107
+_CE_M = 
+# environment
+JOURNAL_STREAM = 8:36383
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -243,11 +257,15 @@ SNAP_USER_DATA = /home/ks/snap/code/102
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
+CONDA_EXE = /home/ks/anaconda3/bin/conda
+# environment
+_CE_CONDA = 
+# environment
 GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=118/1024=12%, Rehash=0, Collisions=3/145=2%
+# Load=126/1024=12%, Rehash=0, Collisions=4/153=3%
 
 # Pattern-specific Variable Values
 
@@ -271,6 +289,7 @@ Makefile:
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
+ 
 
 # Not a target:
 .DEFAULT:
@@ -284,9 +303,6 @@ all:
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
-
- 
-make: *** No rule to make target 'all'.  Stop.
 
 # Not a target:
 makefile:
@@ -316,6 +332,6 @@ GNUmakefile:
 # strcache performance: lookups = 23 / hit rate = 13%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/23=0%
-# Finished Make data base on Tue Jul 19 18:05:45 2022
+# Finished Make data base on Mon Aug  1 04:06:38 2022
 
  
