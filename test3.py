@@ -6,8 +6,8 @@ import open3d as o3d
 import numpy as np
 
 
-depth_raw = o3d.io.read_image("depth.png")
-color_raw = o3d.io.read_image("rgb.png")
+depth_raw = o3d.io.read_image("./depths/depth_5.png")
+color_raw = o3d.io.read_image("./rgb/rgb_5.png")
 rgbd_image = o3d.geometry.RGBDImage.create_from_color_and_depth(
     color_raw, depth_raw)
 

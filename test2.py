@@ -90,8 +90,8 @@ while cap.isOpened():
 
     #cv2.putText(img, f'FPS: {int(fps)}', (20,70), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0), 2)
     cv2.imshow('Image', depth_map)
-    cv2.imwrite("depth.png"+"_"+str(i),depth_map)
-    cv2.imwrite("rgb.png"+"_"+str(i),img)
+    cv2.imwrite("./depths/depth"+"_"+str(i)+".png",depth_map)
+    cv2.imwrite("./rgb/rgb"+"_"+str(i)+".png",img)
     #cv2.imshow('Depth Map', depth_map)
     i+=1
     
